@@ -159,10 +159,19 @@
         
     },
     "Hooks": {
-    "preBuild": [
-      {
-        "pip": "pip install --target ./build -r ./requirements.txt"
-      }
-    ]
-  }
+	"preBuild": [
+    	{
+      	"Fn::Join": [
+        "",
+        [
+          "pip install --target ./build -r ./",
+          {
+            "Ref": "functiongenaitransformers77158e8aName"
+          },
+          "/requirements.txt"
+        ]
+      ]
+    }
+  ]
+}
 }
