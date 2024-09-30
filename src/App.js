@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 // Imports the Amplify library from 'aws-amplify' package. This is used to configure your app to interact with AWS services.
@@ -16,7 +17,6 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 
 import SearchPage from './SearchPage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 Amplify.configure(awsExports);
 
