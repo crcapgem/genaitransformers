@@ -54,5 +54,28 @@
       },
       "lastPushDirHash": "EjmhOY7iJP3y68iC1Y+rPiSmnuU="
     }
+  },
+  "function": {
+    "genaitransformers77158e8a": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {
+    "amplifygenai": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "genaitransformers77158e8a",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
   }
 }
