@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-genaitransformers-dev-70460-authRole",
+      "UnauthRoleArn": "arn:aws:iam::536697225644:role/amplify-genaitransformers-dev-70460-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::536697225644:role/amplify-genaitransformers-dev-70460-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-genaitransformers-dev-70460-deployment",
+      "UnauthRoleName": "amplify-genaitransformers-dev-70460-unauthRole",
+      "StackName": "amplify-genaitransformers-dev-70460",
+      "StackId": "arn:aws:cloudformation:us-east-1:536697225644:stack/amplify-genaitransformers-dev-70460/ea6ebf60-7f5c-11ef-93d8-0afff134ced1",
+      "AmplifyAppId": "d38ke7lyddelk7"
+    },
+    "categories": {
+      "auth": {
+        "genaitransformers2761f48b": {}
+      }
+    }
+  }
+}
