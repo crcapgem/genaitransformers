@@ -157,5 +157,12 @@
             }
         }
         
-    }
+    },
+    "Hooks": {
+    "preBuild": [
+      {
+        "pip": "pip install --target ./build -r ./requirements.txt"
+      }
+    ]
+  }
 }
