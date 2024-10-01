@@ -192,8 +192,8 @@
         }
     },
     "Hooks": {
-        "preBuild": [
-            {
+        "preBuild": {
+            "command": {
                 "Fn::Join": [
                     "",
                     [
@@ -203,6 +203,6 @@
                     ]
                 ]
             }
-        ]
+        }
     }
 }
