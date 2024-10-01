@@ -1,0 +1,113 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-genaitransformersapp-dev-e765c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::536697225644:role/amplify-genaitransformersapp-dev-e765c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::536697225644:role/amplify-genaitransformersapp-dev-e765c-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-genaitransformersapp-dev-e765c-deployment",
+      "UnauthRoleName": "amplify-genaitransformersapp-dev-e765c-unauthRole",
+      "StackName": "amplify-genaitransformersapp-dev-e765c",
+      "StackId": "arn:aws:cloudformation:us-east-1:536697225644:stack/amplify-genaitransformersapp-dev-e765c/587e57f0-7fe8-11ef-b5aa-12f9377a62cd",
+      "AmplifyAppId": "d1g3qtj782krm9"
+    }
+  },
+  "auth": {
+    "genaitransformersapp90b75b9d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-genaitransformersapp-dev-e765c-deployment/amplify-cfn-templates/auth/genaitransformersapp90b75b9d-cloudformation-template.json",
+        "logicalId": "authgenaitransformersapp90b75b9d"
+      },
+      "lastPushTimeStamp": "2024-10-01T12:10:15.059Z",
+      "output": {
+        "UserPoolId": "us-east-1_6kh8alams",
+        "AppClientIDWeb": "15cetqt1l9410q8c3ug5vecj8k",
+        "AppClientID": "6n0o8v44shjhai11t0felipg8b",
+        "IdentityPoolId": "us-east-1:c6af1b90-39eb-462d-b4f0-a76429a0ba6b",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:536697225644:userpool/us-east-1_6kh8alams",
+        "IdentityPoolName": "genaitransformersapp90b75b9d_identitypool_90b75b9d__dev",
+        "UserPoolName": "genaitransformersapp90b75b9d_userpool_90b75b9d"
+      },
+      "lastPushDirHash": "6L+phjNOvWjGESIZQhGNk+EHMw8="
+    }
+  },
+  "function": {
+    "genaitransformerslambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-10-01T12:08:39.907Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-10-01T12:08:42.792Z",
+      "distZipFilename": "genaitransformerslambda-5030362f446544796539-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-genaitransformersapp-dev-e765c-deployment",
+        "s3Key": "amplify-builds/genaitransformerslambda-5030362f446544796539-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-genaitransformersapp-dev-e765c-deployment/amplify-cfn-templates/function/genaitransformerslambda-cloudformation-template.json",
+        "logicalId": "functiongenaitransformerslambda"
+      },
+      "lastPushTimeStamp": "2024-10-01T12:10:15.232Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::536697225644:role/genaitransformersappLambdaRole2c909ae7-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:536697225644:function:genaitransformerslambda-dev",
+        "Name": "genaitransformerslambda-dev",
+        "LambdaExecutionRole": "genaitransformersappLambdaRole2c909ae7-dev"
+      },
+      "lastPushDirHash": "SdueByxQE2fvBDgCJknAnoVjETM="
+    }
+  },
+  "api": {
+    "genailambda": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "genaitransformerslambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-genaitransformersapp-dev-e765c-deployment/amplify-cfn-templates/api/genailambda-cloudformation-template.json",
+        "logicalId": "apigenailambda"
+      },
+      "lastPushTimeStamp": "2024-10-01T12:10:15.232Z",
+      "output": {
+        "ApiName": "genailambda",
+        "RootUrl": "https://95iwqxyzn6.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "95iwqxyzn6"
+      },
+      "lastPushDirHash": "6lbydjBZrybjv/r0quCaZJb/9I8="
+    }
+  }
+}
