@@ -9,7 +9,7 @@ resources.addCfnResource(
     type: "AWS::Lambda::Permission",
     properties: {
       Action: "lambda:InvokeFunction",
-      FunctionName: {"Ref": "<YOUR FUNCTION Name>"},
+      FunctionName: {"Ref": "functiongenaitransformers77158e8aName"},
       Principal: "apigateway.amazonaws.com",
       SourceArn:{
         "Fn::Join": [
