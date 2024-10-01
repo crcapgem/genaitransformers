@@ -25,7 +25,7 @@
           "es:ESHttpDelete"
       ],
       "Resource": [
-          "arn:aws:es:us-east-1:536697225644:domain/testing_index3/*"
+          "arn:aws:es:us-east-1:536697225644:domain/iellhhrn6kean028im78/testing_index3/*"
       ]
   }
 ]
