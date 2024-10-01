@@ -13,7 +13,8 @@
       ],
       "Resource": [
           "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-text-lite-v1",
-          "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0"
+          "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0",
+          "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-text-premier-v1:0"
       ]
   },
   {
