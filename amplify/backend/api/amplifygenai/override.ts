@@ -3,4 +3,37 @@ import { AmplifyApiRestResourceStackTemplate, AmplifyProjectInfo } from '@aws-am
 
 export function override(resources: AmplifyApiRestResourceStackTemplate, amplifyProjectInfo: AmplifyProjectInfo) {
 
+// Adding Resource Based policy to Lambda authorizer function
+resources.addCfnResource(
+  {
+    type: "AWS::Lambda::Permission",
+    properties: {
+      Action: "lambda:InvokeFunction",
+      FunctionName: {"Ref": "<YOUR FUNCTION Name>"},
+      Principal: "apigateway.amazonaws.com",
+      SourceArn:{
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:execute-api:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":",
+            {
+              "Ref": "genaitransformers77158e8a"
+            },
+            "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "LambdaAuthorizerResourceBasedPolicy"
+);
+
 }
