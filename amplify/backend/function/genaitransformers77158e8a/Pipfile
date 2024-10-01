@@ -6,12 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-boto3 = "*"
-pandas = "*" 
-json = "*"
-langchain-aws = "*"
-opensearch-py = "*"
-requests-aws4auth = "*"
+src = {editable = true, path = "./src"}
 
 [requires]
 python_version = "3.12"
