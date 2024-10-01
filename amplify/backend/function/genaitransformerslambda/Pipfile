@@ -6,7 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-src = {editable = true, path = "./src"}
+boto3 = "*"
+pandas = "*"
+langchain-aws = "*"
+opensearch-py = "*"
+requests-aws4auth = "*"
 
 [requires]
 python_version = "3.8"
