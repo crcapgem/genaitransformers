@@ -16,7 +16,13 @@
         "genaitransformersapp90b75b9d": {}
       },
       "function": {
-        "genaitransformerslambda": {}
+        "genaitransformerslambda": {
+          "deploymentBucketName": "amplify-genaitransformersapp-dev-e765c-deployment",
+          "s3Key": "amplify-builds/genaitransformerslambda-5030362f446544796539-build.zip"
+        }
+      },
+      "api": {
+        "genailambda": {}
       }
     }
   }

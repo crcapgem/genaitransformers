@@ -49,5 +49,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_genaitransformerslambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "genaitransformerslambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_genaitransformerslambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "genaitransformerslambda"
+        }
+      ]
+    }
   }
 }
