@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 boto3 = "*"
+pandas = "*"
+langchain-aws = "*"
+opensearch-py = "*"
+requests-aws4auth = "*"
 
 [dev-packages]
 
