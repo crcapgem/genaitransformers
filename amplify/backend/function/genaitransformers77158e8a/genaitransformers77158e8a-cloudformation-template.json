@@ -190,19 +190,5 @@
                 "Ref": "LambdaExecutionRole"
             }
         }
-    },
-    "Hooks": {
-        "preBuild": {
-            "command": {
-                "Fn::Join": [
-                    "",
-                    [
-                        "pip install --target ./build -r ./",
-                        "genaitransformers77158e8a",
-                        "/requirements.txt"
-                    ]
-                ]
-            }
-        }
     }
 }

@@ -3,10 +3,15 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
-
 [packages]
-src = {editable = true, path = "./src"}
+boto3 = "*"
+pandas = "*" 
+json = "*"
+langchain-aws = "*"
+opensearch-py = "*"
+requests-aws4auth = "*"
+
+[dev-packages]
 
 [requires]
 python_version = "3.10"
