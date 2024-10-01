@@ -1,0 +1,5 @@
+pandas
+boto3
+langchain-aws
+opensearch-py
+requests-aws4auth
