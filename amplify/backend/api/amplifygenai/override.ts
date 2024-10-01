@@ -25,7 +25,7 @@ resources.addCfnResource(
             },
             ":",
             {
-              "Ref": "genaitransformers77158e8a"
+              "Ref": "apiamplifygenai"
             },
             "/*/*"
             ]
