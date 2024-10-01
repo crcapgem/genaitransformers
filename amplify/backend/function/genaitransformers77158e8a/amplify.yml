@@ -1,9 +1,0 @@
-version: 1
-backend:
-  service: 'function'
-  providerPlugin: 'awscloudformation'
-functions:
-  genaitransformers77158e8a:
-    build:
-      commands:
-        - pip install -r requirements.txt -t .
