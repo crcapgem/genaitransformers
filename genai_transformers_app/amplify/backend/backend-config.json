@@ -1,4 +1,20 @@
 {
+  "api": {
+    "genailambda": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "genaitransformerslambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "genaitransformersapp90b75b9d": {
       "customAuth": false,
@@ -25,6 +41,13 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "genaitransformerslambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }
